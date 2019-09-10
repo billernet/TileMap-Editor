@@ -67,7 +67,6 @@
                 var newIndex = map.settings.layers.length;
                 map.addLayer("New Layer " + newIndex);
                 map.selectedLayerIndex = newIndex;
-                debugger;
                 addLayer("New Layer " + newIndex, newIndex)
             });
             
@@ -104,7 +103,6 @@
             var palletMap = new Map($("#pallet"), palletOptions);
 
             $("#pallet").on("map_selected", function (event, index) {
-                debugger;
                 mainMap.selectedPalletIndex = index;
                 return index;
             });
@@ -123,7 +121,6 @@
         }
         
         var selectLayer = function (index) {
-            debugger;
             var map = $("#mainmap").data("map");                
             map.selectedLayerIndex = index;
             $("#current-layer").text(map.settings.layers[index].name);
