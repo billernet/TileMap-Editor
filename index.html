@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+        <style>
+            canvas {
+                box-shadow: 4px 4px 8px #C4c4c4;
+                cursor: pointer;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js" language="javascript"></script>
+        <!-- General helper functions -->
+        <script src="Scripts/General.js" language="javascript"></script>
+        <!-- Canvas functionality -->
+        <script src="Scripts/Canvas.js"></script>
+        <!-- Map functionality -->
+        <script src="Scripts/Map.js"></script>
+        <!-- Map instances -->
+        <script src="Scripts/Maps.js"></script>
+        <!-- Javascript for this page -->
+        <script src="Scripts/Index.web.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <p>Work in progress tile-map editor. Uses HTML5 Canvas, JavaScript and jQuery. <a href="../" title="go home">Go home</a>.</p>
+        </div>
+
+        <div class="row">
+            <label class="col-md-2 col-xs-12">Select a pallet (Super Mario has a pre-filled map to play with)</label>
+            <div class="col-md-4 col-xs-12">
+                <select id="predefined-maps" class="form-control"></select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Map</h2>
+                <canvas id="mainmap">Canvas is not supported.</canvas>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-8">
+                <h2>Pallet</h2>
+                <canvas id="pallet">Canvas is not supported.</canvas>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Toolkit</h2>
+                <h3>Layers</h3>
+                <p>Current layer: <span id="current-layer"></span></p>
+                <ul id="layers">
+                    <li><a href="Javascript:void(0);" id="add-layer">Add new layer</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
